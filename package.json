@@ -1,0 +1,27 @@
+{
+  "name": "node-provider-adapters",
+  "version": "0.1.0",
+  "description": "Provider adapters with swappable transports, uncertain-operation outbox, reconciliation, marketplace split, webhook verification and strict CSP for Node 24.",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "test": "node --test --test-reporter=spec test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "demo": "node examples/demo.ts",
+    "check": "npm run lint && npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.0",
+    "@types/node": "^24.19.2",
+    "@types/pg": "^8.23.1",
+    "eslint": "^10.0.0",
+    "pg": "^8.23.1",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.71.2"
+  }
+}
